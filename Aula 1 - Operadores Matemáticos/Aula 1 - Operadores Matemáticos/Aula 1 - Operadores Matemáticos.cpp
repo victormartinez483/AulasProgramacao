@@ -3,13 +3,14 @@
 #include <iostream>
 
 using namespace std;
+void soma (int a, int b);
 
 int main()
 {
-	double a, b, resultado;
-
+	int a, b, resultado;
+	
 	a = 5; //Declarando o valor da variável a = 5
-	b = 3; //Declarando o valor da variável b = 2
+	b = 2; //Declarando o valor da variável b = 2
 
 	cout << "" << endl;
 	cout << "Declaracao dos valores de a e b" << endl;
@@ -25,8 +26,7 @@ int main()
 
 
 	//Teste 1 - Soma (+)
-	resultado = a + b; //resultado esperado = 7
-	cout << "Soma			| a + b = " << resultado << endl;
+	soma(a, b);
 
 	//Teste 2 - Subtração (-)
 	resultado = a - b; //resultado esperado = 3
@@ -81,4 +81,13 @@ int main()
 	resultado = b--; //resultado esperado = 5
 	cout << "pos-Decremento de b	| resultado = " << resultado << endl;
 	cout << "Valor atualizado de b	| a = " << b<< endl;
+}
+
+void soma(int a, int b)
+{
+	//Teste 1 - Soma (+)
+
+	int resultado;
+	resultado = a + b; //resultado esperado = 7
+	cout << "Soma			| a + b = " << resultado << endl;
 }
